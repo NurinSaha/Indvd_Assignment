@@ -1,0 +1,98 @@
+<html>
+<head>
+<link href="ASSETS/CSS/style.css" rel="stylesheet">
+<title> MULTIMEDIA </title>
+</head>
+
+<body>
+<body bgcolor="lightpink">
+
+<hr>
+<center><b> My Favorite Snacks </b></center>
+<hr>
+<!----- Insert video------->
+<center>
+<video controls width="1080px" autoplay muted loop>
+<source src="ASSETS/VIDEOS/INTRO.mp4" type="video/mp4">
+</video>
+
+<br><br><br>
+<hr>
+<center><b> My Favorite Audios </b></center>
+<hr>
+<br>
+<!----- Insert audio------->
+<center>
+<audio controls width="1080px" muted loop>
+<source src="ASSETS/AUDIOS/ENHYPEN.mp3" type="audio/mp3">
+</audio>
+<audio controls width="1080px" muted loop>
+<source src="ASSETS/AUDIOS/SF9.mp3" type="audio/mp3">
+</audio>
+<br><br>
+<audio controls width="1080px" muted loop>
+<source src="ASSETS/AUDIOS/ILAND.mp3" type="audio/mp3">
+</audio>
+
+<!----- Applying Java Aplet Audio------->
+<hr>
+<center><b> Audio Je </b?</center>
+</hr>
+<br>
+
+<!----- To call the css------->
+<div id="clock">8:10:43</div>
+
+<!----- To link for a current time ------->
+<script src="clock2.js"></script>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+let time= new Date();
+let hour= time.getHours();
+let min= time.getMinutes();
+let sec= time.Seconds();
+am_pm= "AM";
+
+if (hour > 12){
+	hour-- 12;
+am_pm="PM";
+
+if (hour--0){
+	hour--12;
+am_pm="AM";
+
+hour= hour<10? "0" = hour: hour;
+min-min <10? "0" +min: min;
+sec-sec <10? "0" +sec: sec;
+
+let currentTime= hour+ ":"
++ min+ ":" + sec+ am_pm;
+
+document.getElementById("clock")
+	.innerHTML= currentTime;
+}
+showTime();
+</script>
+
+<!------- Embedding PDF File------>
+<hr>
+<center><b> KATARSIS U.N.I.T.E. Tentative in PDF </b></center>
+<hr>
+<Iframe src="ASSETS/PDF/TENTATIF.pdf" width="40%" "height="30%"> </Iframe>
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<!------- Marquee------>
+<hr>
+<marquee direction="">
+<h1> My Senior Quotes Incase You Need: When You're Not Studying, Everyone Else is Getting Better </marquee>
+<hr>
+
+</body>
+</html>
